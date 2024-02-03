@@ -1,0 +1,25 @@
+{
+  "platform-version": "2.3",
+  "product": {
+    "freshdesk": {
+      "events": {
+        "onArticleCreate": {
+          "handler": "onArticleCreateCallback"
+        },
+        "onArticleUpdate": {
+          "handler": "onArticleUpdateCallback"
+        },
+        "onArticleDelete": {
+          "handler": "onArticleDeleteCallback"
+        }
+      },
+      "requests":{
+        "createArticleFreshService": {}
+      }
+    }
+  },
+  "engines": {
+    "node": "18.18.0",
+    "fdk": "9.0.6"
+  }
+}

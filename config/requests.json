@@ -1,0 +1,15 @@
+{
+    "createArticleFreshService":{
+        "schema": {
+            "protocol": "https",
+            "method": "POST",
+            "host": "<%= iparam.domain %>.freshservice.com",
+            "path": "/api/v2/solutions/articles",
+            "headers": {
+              "Authorization":"Basic <%= encode(iparam.apiKey) %>",
+              "Accept": "application/json",
+              "Content-Type": "application/json"
+            }
+          }
+    }
+}

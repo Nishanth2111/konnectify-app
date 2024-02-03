@@ -1,0 +1,29 @@
+{
+    "domain": {
+        "display_name": "Domain Name",
+        "description": "https://domain-name.freshservice.com/",
+        "type": "domain",
+        "type_attributes": {
+            "product": "freshservice"
+        },
+        "required": true
+    },
+    "apiKey": {
+        "display_name": "Api Key",
+        "description": "Please enter your api key of freshservice account",
+        "type": "api_key",
+        "secure": true,
+        "required": true,
+        "type_attributes": {
+            "product": "freshservice"
+        }
+    },
+    "folderId": {
+        "display_name": "Folder Id",
+        "description": "Please enter your folder_id of freshservice account that have to create and update",
+        "type": "number",
+        "type_attributes": {
+            "product": "freshservice"
+        }
+    }
+}
