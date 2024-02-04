@@ -16,7 +16,7 @@
       "requests": {
         "createArticleFreshService": {},
         "updateArticleFreshService": {},
-        "deletingArticleFreshService": {}
+        "deleteArticleFreshService": {}
       }
     }
   },

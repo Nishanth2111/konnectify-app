@@ -1,40 +1,40 @@
 {
-    "createArticleFreshService":{
-        "schema": {
-            "protocol": "https",
-            "method": "POST",
-            "host": "<%= iparam.domain %>.freshservice.com",
-            "path": "/api/v2/solutions/articles",
-            "headers": {
-              "Authorization":"Basic <%= encode(iparam.apiKey) %>",
-              "Accept": "application/json",
-              "Content-Type": "application/json"
-            }
-          }
-    },
-    "updateArticleFreshService":{
-      "schema": {
-        "protocol": "https",
-        "method": "PUT",
-        "host": "<%= iparam.domain %>.freshservice.com",
-        "path": "/api/v2/solutions/articles/<%= context.idForUrl %>",
-        "headers": {
-          "Authorization":"Basic <%= encode(iparam.apiKey) %>",
-          "Accept": "application/json",
-          "Content-Type": "application/json"
-        }
-      }
-    },
-    "deletingArticleFreshService":{
-      "schema":{
-        "protocol": "https",
-        "method": "DELETE",
-        "host": "<%= iparam.domain %>.freshservice.com",
-        "path": "/api/v2/solutions/articles/<%= context.idForUrl %>",
-        "headers": {
-          "Authorization":"Basic <%= encode(iparam.apiKey) %>",
-          "Content-Type": "application/json"
-        }
+  "createArticleFreshService": {
+    "schema": {
+      "protocol": "https",
+      "method": "POST",
+      "host": "<%= iparam.domain %>.freshservice.com",
+      "path": "/api/v2/solutions/articles",
+      "headers": {
+        "Authorization": "Basic <%= encode(iparam.apiKey) %>",
+        "Accept": "application/json",
+        "Content-Type": "application/json"
       }
     }
+  },
+  "updateArticleFreshService": {
+    "schema": {
+      "protocol": "https",
+      "method": "PUT",
+      "host": "<%= iparam.domain %>.freshservice.com",
+      "path": "/api/v2/solutions/articles/<%= context.idForUrl %>",
+      "headers": {
+        "Authorization": "Basic <%= encode(iparam.apiKey) %>",
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      }
+    }
+  },
+  "deleteArticleFreshService": {
+    "schema": {
+      "protocol": "https",
+      "method": "DELETE",
+      "host": "<%= iparam.domain %>.freshservice.com",
+      "path": "/api/v2/solutions/articles/<%= context.idForUrl %>",
+      "headers": {
+        "Authorization": "Basic <%= encode(iparam.apiKey) %>",
+        "Content-Type": "application/json"
+      }
+    }
+  }
 }
