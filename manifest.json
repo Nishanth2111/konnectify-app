@@ -13,8 +13,10 @@
           "handler": "onArticleDeleteCallback"
         }
       },
-      "requests":{
-        "createArticleFreshService": {}
+      "requests": {
+        "createArticleFreshService": {},
+        "updateArticleFreshService": {},
+        "deletingArticleFreshService": {}
       }
     }
   },
